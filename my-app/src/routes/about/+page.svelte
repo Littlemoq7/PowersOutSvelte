@@ -3,8 +3,8 @@
 
 </script>
 
-<div class="pt-20 bg-[#a8d4cf] text-white">
-  <div class="w-[90%] m-auto bg-[#259185]">
+<div class="pt-20 bg-[#2A9D8F] text-white">
+  <div class="w-[90%] m-auto bg-[#144e47]">
     <div class="font-semibold text-4xl text-center w-full text-nowrap py-2">
       About
     </div>
@@ -67,6 +67,6 @@
     />
   </div>
 </div>
-<div class="text-white text-center bg-[#a8d4cf]">
+<div class="text-white text-center bg-[#2A9D8F]">
   Power's Out Records
 </div>

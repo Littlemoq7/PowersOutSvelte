@@ -2,7 +2,7 @@
 	import './layout.css';
 	import favicon from '$lib/assets/favicon.svg';
 	import NavigationLink from '$lib/components/navigationLink.svelte';
-  import NavigationBarIcon from '$lib/components/navigationBarIcon.svelte';
+	import NavigationBarIcon from '$lib/components/navigationBarIcon.svelte';
 
 	let { children } = $props();
 	let elementScrollTop = $state(0);
