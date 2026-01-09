@@ -5,24 +5,7 @@
 
 <!-- Banner Section -->
 
-<header>
-  <div class="banner">
-    <h1 id="header-title">Power's Out</h1>
-  </div>
-  <nav class="navbar">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="discography.html">Discography</a></li>
-      <li><a href="bio.html">Bio</a></li>
-      <li><a href="contact.html">Contact Us</a></li>
-    </ul>
-  </nav>
-</header> 
-
-<section>
-  <div class="section-header">
-    <h1>Our Members</h1>
-  </div>
+<section class="pt-20 bg-[#2A9D8F]">
   <MemberBioCard 
     name="Connor Moquin"
     picture="images/connor_pic.jpg"
