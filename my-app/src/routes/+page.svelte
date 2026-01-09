@@ -1,4 +1,4 @@
-<video autoplay loop muted playsinline>
+<video autoplay loop muted playsinline class="w-full">
   <source src="images/short_band_clips.mp4" type="video/mp4">
 </video>
 

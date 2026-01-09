@@ -32,9 +32,7 @@
 		</div>
 	</div>
 </header>
-<div class="w-full mt-20">
-	{@render children()}
-</div>
+{@render children()}
 
 <style>
 	.row {
