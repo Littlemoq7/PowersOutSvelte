@@ -12,7 +12,7 @@
 
 <svelte:head><link rel="icon" href={favicon} /></svelte:head>
 <svelte:window bind:scrollY={elementScrollTop} />
-<header class="w-full top-0 fixed" class:bg-amber-700={elementScrollTop > 0}>
+<header class="w-full top-0 fixed z-10000" class:bg-amber-700={elementScrollTop > 0}>
 	<div class="row h-20 justify-between w-full max-w-300 mx-auto">
 		<div class="flex flex-row left">
 			<NavigationLink title="Home" linkText=""></NavigationLink>
