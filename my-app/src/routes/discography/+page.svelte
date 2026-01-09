@@ -1,52 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-  <title>Power's Out</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="header.css">
-  <link rel="stylesheet" href="contact.css">
-</head>
-<body>
-  <!-- Banner Section -->
+<script>
+  import MemberBioCard from "$lib/components/MemberBioCard.svelte";
+  import ReleaseCard from "$lib/components/ReleaseCard.svelte";
 
-  <header>
-    <div class="banner">
-      <h1 id="header-title">Power's Out</h1>
+</script>
+
+<div class="pt-20 bg-[#a8d4cf] text-white">
+  <div class="max-w-300 m-auto bg-[#259185]">
+    <div class="text-white text-3xl font-bold font-sans w-full text-center mb-2">
+      RELEASES
+      <div class="flex flex-auto flex-wrap">
+        <ReleaseCard text="Fall Fell - Single" picture="images/fall_fell.jpg" type="(2022)"></ReleaseCard>
+        <ReleaseCard text="Tonight - Single" picture="images/tonight.jpg" type="(2022)"></ReleaseCard>
+        <ReleaseCard text="Take Me Back - LP" picture="images/take_me_back.jpg" type="(2023)"></ReleaseCard>
+        <ReleaseCard text="Growing Out - Single" picture="images/growing_out.jpg" type="(2023)"></ReleaseCard>
+        <ReleaseCard text="Songs and Scenes of Yesterday - EP" picture="images/songs_and_scenes_of_yesterday.jpg" type="(2024)"></ReleaseCard>
+        <ReleaseCard text="This Christmas - Single" picture="images/this_christmas.jpg" type="(2024)"></ReleaseCard>
+      </div>
     </div>
-    <nav class="navbar">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="discography.html">Discography</a></li>
-        <li><a href="bio.html">Bio</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-      </ul>
-    </nav>
-  </header>
-  
-  <section>
-    <p id="form-description">Fill in your contact and message below: </p>
-    <form action="https://api.web3forms.com/submit" method="POST">
-
-      <!-- Replace with your Access Key -->
-      <input type="hidden" name="access_key" value="f7e26cd2-aaeb-424d-ab4b-6ff2ebc3286e">
-  
-      <!-- Form Inputs. Each input must have a name="" attribute -->
-      <input type="text" name="name" required placeholder="Subject">
-      <input type="email" name="email" required placeholder="Email">
-      <textarea name="message" required placeholder="Message"></textarea>
-  
-      <!-- Honeypot Spam Protection -->
-      <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-  
-      <!-- Custom Confirmation / Success Page -->
-      <input type="hidden" name="redirect" value="https://www.powersout.me/contact_thanks.html">
-  
-      <button type="submit">Submit Form</button>
-  </form>
-  </section>
-  <p class="footer-text">Power's Out Records</p>
-</body>
-</html>
+  </div>
+</div>
+<div class="text-white text-center bg-[#a8d4cf]">
+  Power's Out Records
+</div>

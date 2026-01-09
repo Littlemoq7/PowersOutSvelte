@@ -67,6 +67,6 @@
     />
   </div>
 </div>
-<div class="text-white text-center bg-[#a8d4cf]">
+<div class="text-white text-center bg-[#2A9D8F]">
   Power's Out Records
 </div>
