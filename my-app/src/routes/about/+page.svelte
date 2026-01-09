@@ -3,9 +3,10 @@
 
 </script>
 
-<!-- Banner Section -->
-
-<section class="pt-20 bg-[#2A9D8F]">
+<div class="pt-20">
+  <div class="text-black font-semibold text-4xl text-center w-full text-nowrap" >
+    Our Members
+  </div>
   <MemberBioCard 
     name="Connor Moquin"
     picture="images/connor_pic.jpg"
@@ -43,5 +44,5 @@
     instrument="Drums"
     bio="Andrew Rezzarday has played the drums since middle school. Being in a band as well as playing for the Hollis Brookline jazz band has broadened his style and brought a great appreciation for music through playing. He is currently attending Nashua Community College as a business major."
   />
-  </section>
+</div>
 <p class="footer-text">Power's Out Records</p>
