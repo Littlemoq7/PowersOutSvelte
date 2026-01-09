@@ -12,7 +12,7 @@
 
 <svelte:head><link rel="icon" href={favicon} /></svelte:head>
 <svelte:window bind:scrollY={elementScrollTop} />
-<header class="w-full top-0 fixed z-10000 bg-po" class:opacity-0={elementScrollTop > 0}>
+<header class="w-full top-0 fixed z-10000" class:bg-po={elementScrollTop > 0}>
 	<div class="row h-20 justify-between w-full max-w-300 mx-auto">
 		<div class="flex flex-row left">
 			<NavigationLink title="Home" linkText=""></NavigationLink>
@@ -53,6 +53,7 @@
 		justify-self: end;
 	}
 	.bg-po {
+		transition: background-color 0.5s ease, color 0.5s ease;
 		background-color: #2A9D8F;
 	}
 </style>
