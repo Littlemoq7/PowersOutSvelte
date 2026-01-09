@@ -5,10 +5,14 @@
   import NavigationBarIcon from '$lib/components/navigationBarIcon.svelte';
 
 	let { children } = $props();
+	let elementScrollTop = $state(0);
+
+
 </script>
 
 <svelte:head><link rel="icon" href={favicon} /></svelte:head>
-<header class="bg-amber-700 w-full">
+<svelte:window bind:scrollY={elementScrollTop} />
+<header class="w-full top-0 fixed" class:bg-amber-700={elementScrollTop > 0}>
 	<div class="row h-20 justify-between w-full max-w-300 mx-auto">
 		<div class="flex flex-row left">
 			<NavigationLink title="Home" linkText=""></NavigationLink>
@@ -28,7 +32,9 @@
 		</div>
 	</div>
 </header>
-{@render children()}
+<div class="w-full mt-20">
+	{@render children()}
+</div>
 
 <style>
 	.row {
