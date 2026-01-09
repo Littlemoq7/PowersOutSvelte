@@ -27,5 +27,5 @@
       <source src="images/short_band_clips.mp4" type="video/mp4">
     </video>
 </div>
-<div class="h-300 bg-[#2A9D8F]"> 
+<div class="h-300 bg-[#a8d4cf]"> 
  </div>   
