@@ -3,25 +3,9 @@
 
 </script>
 
-<!-- Banner Section -->
-
-<header>
-  <div class="banner">
-    <h1 id="header-title">Power's Out</h1>
-  </div>
-  <nav class="navbar">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="discography.html">Discography</a></li>
-      <li><a href="bio.html">Bio</a></li>
-      <li><a href="contact.html">Contact Us</a></li>
-    </ul>
-  </nav>
-</header> 
-
-<section>
-  <div class="section-header">
-    <h1>Our Members</h1>
+<div class="pt-20">
+  <div class="text-black font-semibold text-4xl text-center w-full text-nowrap" >
+    Our Members
   </div>
   <MemberBioCard 
     name="Connor Moquin"
@@ -60,5 +44,5 @@
     instrument="Drums"
     bio="Andrew Rezzarday has played the drums since middle school. Being in a band as well as playing for the Hollis Brookline jazz band has broadened his style and brought a great appreciation for music through playing. He is currently attending Nashua Community College as a business major."
   />
-  </section>
+</div>
 <p class="footer-text">Power's Out Records</p>
