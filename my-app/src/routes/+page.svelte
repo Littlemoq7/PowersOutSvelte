@@ -3,18 +3,18 @@
         <div class="flex">
         </div>
         <div class="flex">
-            <a class="text-3xl font-semibold text-white bg-cyan-700 pt-5 pb-5 pr-9 pl-9 rounded-[50px] hover:opacity-70 transition-opacity z-1" href="/discography"aria-label="Music">
+            <a class="text-3xl font-semibold text-white bg-[#259185] pt-5 pb-5 pr-9 pl-9 rounded-[50px] hover:opacity-70 transition-opacity z-1" href="/discography"aria-label="Music">
                 Music
             </a>
 
         </div>
         <div class="flex">
-            <a class="text-3xl font-semibold text-white bg-cyan-700 pt-5 pb-5 pr-9 pl-9 rounded-[50px] hover:opacity-70 transition-opacity z-1" href="/about"aria-label="Members">
+            <a class="text-3xl font-semibold text-white bg-[#259185] pt-5 pb-5 pr-9 pl-9 rounded-[50px] hover:opacity-70 transition-opacity z-1" href="/about"aria-label="Members">
                 Members
             </a>
         </div>
         <div class="flex">
-            <a class="text-3xl font-semibold text-white bg-cyan-700 pt-5 pb-5 pr-9 pl-9 rounded-[50px] hover:opacity-70 transition-opacity z-1" href="/gallery"aria-label="Photos">
+            <a class="text-3xl font-semibold text-white bg-[#259185] pt-5 pb-5 pr-9 pl-9 rounded-[50px] hover:opacity-70 transition-opacity z-1" href="/gallery"aria-label="Photos">
                 Photos
             </a>
         </div>
