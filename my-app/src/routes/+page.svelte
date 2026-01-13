@@ -39,7 +39,7 @@
       </div>
       <div class="flex justify-evenly">
         <iframe
-          class="w-2/5 aspect-video"
+          class="w-2/5 aspect-video rounded"
           src="https://www.youtube.com/embed/0dMOQbHaTFQ"
           title="YouTube video 1"
           frameborder="0"
@@ -48,7 +48,7 @@
         </iframe>
 
         <iframe
-          class="w-2/5 aspect-video"
+          class="w-2/5 aspect-video rounded"
           src="https://www.youtube.com/embed/7ck34b_bklE"
           title="YouTube video 2"
           frameborder="0"
