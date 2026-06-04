@@ -4,26 +4,13 @@
 </script>
 
 <div class="pt-20 bg-[#a8d4cf] text-white">
-  <div class="w-[90%] mx-auto mt-4 bg-[#259185]">
-    <div class="font-semibold text-4xl text-center w-full text-nowrap py-2">
-      About
+  <div class="w-[90%] mx-auto bg-[#259185]">
+    <div class="text-3xl font-bold font-sans text-center w-full text-nowrap py-6">
+      <h1>ABOUT</h1>
     </div>
-    <div class="px-20 text-center">
-      After a landslide election victory in 2024, President Donald J. Trump is returning to the White House to build upon his previous successes and use his mandate to reject the extremist policies of the radical left while providing tangible quality of life improvements for the American people. <br><br>
-
-      This includes putting a stop to endless wars, defending our nation’s borders, and unleashing the potential of the American economy, affording ALL Americans the opportunity to pursue THEIR version of the American dream. <br><br>
-
-      In his first administration, President Trump passed record-setting tax cuts and regulation cuts, achieved energy independence, replaced NAFTA with the United-States-Mexico-Canada Agreement, invested $2 trillion to completely rebuild the Military, launched the Space Force, obliterated the ISIS Caliphate, achieved a major breakthrough for peace in the Middle East, passed the most significant Veterans Affairs reforms in half a century, confirmed over 250 federal judges, including 3 Supreme Court Justices, signed bipartisan Criminal Justice Reform, lowered drug prices, protected Medicare and Social Security, and secured our nation’s borders in his first four years in office.  This was only the beginning. <br><br>
-
-      Donald J. Trump defines the American success story. Throughout his life he has continually set the standards of business and entrepreneurial excellence, especially in real estate, sports, and entertainment. President Trump built on his success in private life when he entered into politics and public service. <br><br>
-
-      He remarkably won the Presidency in his first ever run for any political office.  He won a second time despite several assassination attempts and the unprecedented weaponization of law fare against him.  Time after time President Trump has defied the odds because he fundamentally believes in the exceptionalism of the American spirit and wants to see our great country succeed. <br><br>
-
-      A graduate of the University of Pennsylvania’s Wharton School of Finance, President Trump followed in his father’s footsteps into the world of real estate development, making his mark in New York City. There, the Trump name soon became synonymous with the most prestigious of addresses in Manhattan and, subsequently, throughout the world. <br><br>
-
-      President Trump is also an accomplished author. He has written more than fourteen bestsellers. His first book, The Art of the Deal, is considered a business classic. <br><br>
-
-      President Trump has five children, Barron, Don Jr., Ivanka, Eric, and Tiffany, as well as 11 grandchildren. <br><br>
+    <div class="px-20 pb-6 w-4/5 text-center mx-auto">
+      Power's Out is a Hollis, NH band that has been playing together since high school. They blend a range of styles 
+      like rock, jam-band, funk, and blues into a modern sound in both their covers and original music.
     </div>
     <div class="text-3xl text-center w-full text-nowrap py-2" >
       Meet the Band

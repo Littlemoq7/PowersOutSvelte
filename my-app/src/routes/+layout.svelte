@@ -3,16 +3,18 @@
 	import favicon from '$lib/assets/favicon.svg';
 	import NavigationLink from '$lib/components/navigationLink.svelte';
 	import NavigationBarIcon from '$lib/components/navigationBarIcon.svelte';
+	import { page } from '$app/state';
 
 	let { children } = $props();
 	let elementScrollTop = $state(0);
 
+	let isHome = $derived(page.url.pathname === '/');
 
 </script>
 
 <svelte:head><link rel="icon" href={favicon} /></svelte:head>
 <svelte:window bind:scrollY={elementScrollTop} />
-<header class="w-full top-0 fixed z-10000" class:bg-po={elementScrollTop > 0}>
+<header class="w-full top-0 fixed z-10000" class:bg-po={elementScrollTop > 0 || !isHome}>
 	<div class="row h-20 justify-between w-full max-w-300 mx-auto">
 		<div class="flex flex-row left">
 			<NavigationLink title="Home" linkText=""></NavigationLink>
