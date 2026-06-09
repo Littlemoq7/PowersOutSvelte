@@ -8,7 +8,7 @@
     <div class="text-3xl font-bold font-sans text-center w-full text-nowrap py-6">
       <h1>ABOUT</h1>
     </div>
-    <div class="px-20 pb-6 w-4/5 text-center mx-auto">
+    <div class="md:px-20 px-10 pb-6 md:w-4/5 text-center mx-auto">
       Power's Out is a Hollis, NH band that has been playing together since high school. They blend a range of styles 
       like rock, jam-band, funk, and blues into a modern sound in both their covers and original music.
     </div>

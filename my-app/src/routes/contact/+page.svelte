@@ -1,4 +1,4 @@
-<div class="bg-[#a8d4cf] h-300 pt-20">
+<div class="bg-[#a8d4cf] h-full pt-20">
   <section class="flex flex-col justify-center items-center px-5 py-20 min-h-[60vh] box-border max-w-300 mx-auto bg-[#259185]">
   <div class="w-full h-20"></div>
   <div class="w-4/5 mx-auto">
@@ -19,10 +19,12 @@
         <!-- Custom Confirmation / Success Page -->
         <input type="hidden" name="redirect" value="https://www.powersout.me/contact_thanks.html">
         <div></div>
-        <button type="submit" class="block mx-auto p-3.5 text-base bg-[#333] text-white border-none rounded-md cursor-pointer transition-colors duration-300 hover:bg-[#555]">Submit Form</button>
+        <button type="submit" class="block mx-auto p-3.5 text-base bg-[#333] text-white border-none rounded-md cursor-pointer transition-colors duration-300 hover:bg-[#555]">Submit Message</button>
       </div>
     </form>
   </div>
   </section>
 </div>
-<p class="footer-text">Power's Out Records</p>
+<div class="text-white text-center bg-[#2A9D8F]">
+  Power's Out Records
+</div>

@@ -43,6 +43,6 @@
     </div>
   </div>
 </div>
-<div class="text-white text-center bg-[#a8d4cf] py-2">
+<div class="text-white text-center bg-[#2A9D8F]">
   Power's Out Records
 </div>
