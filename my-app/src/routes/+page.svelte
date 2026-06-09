@@ -1,5 +1,6 @@
 <script>
   import FrontPageBigButton from "$lib/components/FrontPageBigButton.svelte";
+  import { fadeInOnScroll } from "$lib/actions/fadeInOnScroll.js";
 </script>
 
 <div class="w-full h-[65vh] overflow-hidden relative">
@@ -20,7 +21,7 @@
 </div>
 <div class="flex-col h-full bg-[#a8d4cf] text-white pt-8 pb-0">
   <div class="flex-col md:w-4/5 w-9/10 mx-auto bg-[#259185] rounded-t">
-    <div class="w-full md:px-10 px-4 py-5 text-center">
+    <div class="w-full md:px-10 px-4 py-5 text-center" use:fadeInOnScroll>
       <h2 class="font-semibold text-xl">Hollis, NH band founded in 2021.</h2>
       Plays originals and covers across genres like rock, pop, blues, country, funk, jam band, and more.
       Click the YouTube icon to watch some of our performances, and see the contact page for booking and inquiries.
@@ -31,7 +32,7 @@
         <a href="https://www.instagram.com/powersoutband/" target="_blank"><img src="images/instagram_icon.png" alt="Instagram Icon" class="max-w-10 max-h-10 opacity-80 m-auto transition-transform duration-200 ease-in-out hover:scale-110"></a>
       </div>
     </div>
-    <div class="w-full md:px-10 px-4 py-5">
+    <div class="w-full md:px-10 px-4 py-5" use:fadeInOnScroll>
       <div class="m-auto text-center pb-2">
         <h2 class="font-semibold text-xl">Live Performances</h2>
       </div>
@@ -55,7 +56,7 @@
         </iframe>
       </div>
     </div>
-    <div class="w-full md:px-10 px-4 py-5">
+    <div class="w-full md:px-10 px-4 py-5" use:fadeInOnScroll>
       <div class="m-auto text-center pb-2">
         <h2 class="font-semibold text-xl">Studio Recordings</h2>
       </div>

@@ -3,3 +3,17 @@
 @theme {
 	--color-po: #2a9d8f;
 }
+
+/* Applied by the fadeInOnScroll action before the element is in view. */
+.fade-in-on-scroll {
+	opacity: 0;
+	transform: translateY(2rem);
+	transition:
+		opacity 0.7s ease-out,
+		transform 0.7s ease-out;
+}
+
+.fade-in-on-scroll.is-visible {
+	opacity: 1;
+	transform: none;
+}
