@@ -18,13 +18,13 @@
       <source src="images/short_band_clips.mp4" type="video/mp4">
     </video>
 </div>
-<div class="flex-col h-full bg-[#a8d4cf] text-white pt-4"> 
-  <div class="flex-col md:w-4/5 w-9/10 mx-auto bg-[#259185] rounded">
+<div class="flex-col h-full bg-[#a8d4cf] text-white pt-8 pb-0">
+  <div class="flex-col md:w-4/5 w-9/10 mx-auto bg-[#259185] rounded-t">
     <div class="w-full px-10 py-5 text-center">
       <h2 class="font-semibold text-xl">Hollis, NH band founded in 2021.</h2>
       Plays originals and covers across genres like rock, pop, blues, country, funk, jam band, and more.
       Click the YouTube icon to watch some of our performances, and see the contact page for booking and inquiries.
-      <div class="flex justify-center items-center gap-[50px] p-2.5">
+      <div class="flex justify-center items-center gap-12.5 p-2.5">
         <a href="https://open.spotify.com/artist/4qEGLVNJT3OfCqBKsRHvcG?si=GoAw_CgARNCr2Pi8hDrmdQ" target="_blank"><img src="images/spotify-logo.png" alt="Spotify Logo" class="max-w-10 max-h-10 opacity-80 m-auto transition-transform duration-200 ease-in-out hover:scale-110"></a>
         <a href="https://music.apple.com/us/artist/powers-out/1637085670" target="_blank"><img src="images/apple-music-icon.png" class="rounded-xl max-w-10 max-h-10 opacity-80 m-auto transition-transform duration-200 ease-in-out hover:scale-110" alt="Apple Music Logo"></a>
         <a href="https://www.youtube.com/@powersoutband" target="_blank"><img src="images/youtube-logo.png" alt="Youtube Logo" class="max-w-10 max-h-10 opacity-80 m-auto transition-transform duration-200 ease-in-out hover:scale-110"></a>

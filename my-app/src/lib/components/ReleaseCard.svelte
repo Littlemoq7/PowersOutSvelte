@@ -10,7 +10,7 @@
   <img
     src={picture}
     alt={text}
-    class="w-full aspect-square object-cover
+    class="w-full aspect-square object-cover rounded shadow-lg
     transition-transform duration-200 ease-in-out hover:scale-105"
   />
   <p class="mt-3 text-base font-normal font-sans">{text}</p>

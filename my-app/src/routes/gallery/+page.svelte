@@ -27,7 +27,7 @@
 </script>
 
 <div class="pt-20 bg-[#a8d4cf] text-white min-h-screen">
-  <div class="max-w-300 m-auto bg-[#259185] p-4 pt-0">
+  <div class="w-[90%] max-w-300 m-auto bg-[#259185] p-4 pt-0">
     <h1 class="text-white text-3xl font-bold font-sans w-full text-center py-6">
       GALLERY
     </h1>
