@@ -47,7 +47,7 @@
 
     <MemberBioCard 
       name="Andrew Rezzarday"
-      picture="images/home_images/rezzy.webp"
+      picture="images/andrew_pic.JPG"
       igLink="https://www.instagram.com/andrew_rezzy/"
       instrument="Drums"
       bio="Andrew Rezzarday has played the drums since middle school. Being in a band as well as playing for the Hollis Brookline jazz band has broadened his style and brought a great appreciation for music through playing. He is currently attending Nashua Community College as a business major."
