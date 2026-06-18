@@ -4,14 +4,10 @@
 </script>
 
 <div class="w-full h-[65vh] overflow-hidden relative">
-  <div class="w-full flex-row absolute top-60 flex justify-between">
-    <div class="flex">
-    </div>
+  <div class="w-[90%] max-w-300 flex flex-row justify-between absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
     <FrontPageBigButton text="Music" href="/discography" />
     <FrontPageBigButton text="Members" href="/about" />
     <FrontPageBigButton text="Photos" href="/gallery" />
-    <div class="flex">
-    </div>
   </div>
     <div class="bg-black w-full h-full opacity-30 absolute">
     </div>
@@ -20,7 +16,7 @@
     </video>
 </div>
 <div class="flex-col h-full bg-[#a8d4cf] text-white pt-8 pb-0">
-  <div class="flex-col md:w-4/5 w-9/10 mx-auto bg-[#259185] rounded-t">
+  <div class="flex-col w-[90%] max-w-300 mx-auto bg-[#259185] rounded-t">
     <div class="w-full md:px-10 px-4 py-5 text-center" use:fadeInOnScroll>
       <h2 class="font-semibold text-xl">Hollis, NH band founded in 2021.</h2>
       Plays originals and covers across genres like rock, pop, blues, country, funk, jam band, and more.
@@ -36,31 +32,34 @@
       <div class="m-auto text-center pb-2">
         <h2 class="font-semibold text-xl">Live Performances</h2>
       </div>
-      <div class="flex flex-col md:flex-row justify-evenly gap-4 md:gap-0">
-        <iframe
-          class="md:w-2/5 aspect-video rounded"
-          src="https://www.youtube.com/embed/0dMOQbHaTFQ"
-          title="YouTube video 1"
-          frameborder="0"
-          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
-        </iframe>
-
-        <iframe
-          class="md:w-2/5 aspect-video rounded"
-          src="https://www.youtube.com/embed/7ck34b_bklE"
-          title="YouTube video 2"
-          frameborder="0"
-          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
-        </iframe>
+      <div class="flex flex-col md:flex-row justify-evenly gap-4">
+        <div class="flex-1">
+          <iframe
+            class="aspect-video rounded"
+            src="https://www.youtube.com/embed/0dMOQbHaTFQ"
+            title="YouTube video 1"
+            frameborder="0"
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>          
+        </div>
+        <div class="flex-1">
+          <iframe
+            class="aspect-video rounded"
+            src="https://www.youtube.com/embed/7ck34b_bklE"
+            title="YouTube video 2"
+            frameborder="0"
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>          
+        </div>
       </div>
     </div>
     <div class="w-full md:px-10 px-4 py-5" use:fadeInOnScroll>
       <div class="m-auto text-center pb-2">
         <h2 class="font-semibold text-xl">Studio Recordings</h2>
       </div>
-      <iframe src="https://open.spotify.com/embed/album/5bdC7E9TVlThVvLa6mfOLf" title="Spotify Web Player" frameborder="0" allow="encrypted-media" class="block w-full md:w-2/3 h-100 mx-auto"></iframe>
+      <iframe src="https://open.spotify.com/embed/album/5bdC7E9TVlThVvLa6mfOLf" title="Spotify Web Player" frameborder="0" allow="encrypted-media" class="block w-full h-120 mx-auto"></iframe>
     </div>
   </div>
 </div>
