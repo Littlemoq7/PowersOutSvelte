@@ -4,14 +4,14 @@
 </script>
 
 <div class="w-full h-[65vh] overflow-hidden relative">
-  <div class="w-[90%] max-w-300 flex flex-row justify-between absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+  <div class="w-[90%] max-w-300 flex flex-row justify-between absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
     <FrontPageBigButton text="Music" href="/discography" />
     <FrontPageBigButton text="Members" href="/about" />
     <FrontPageBigButton text="Photos" href="/gallery" />
   </div>
-    <div class="bg-black w-full h-full opacity-30 absolute">
+    <div class="bg-black w-full h-full opacity-30 absolute pointer-events-none">
     </div>
-    <video autoplay loop muted playsinline class="w-full h-full object-cover">
+    <video autoplay loop muted playsinline class="w-full h-full object-cover -z-50">
       <source src="images/short_band_clips.mp4" type="video/mp4">
     </video>
 </div>
