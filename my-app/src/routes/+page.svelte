@@ -9,7 +9,7 @@
     <FrontPageBigButton text="Members" href="/about" />
     <FrontPageBigButton text="Photos" href="/gallery" />
   </div>
-    <div class="bg-black w-full h-full opacity-30 absolute pointer-events-none">
+    <div class="bg-black w-full h-full opacity-40 absolute pointer-events-none">
     </div>
     <video autoplay loop muted playsinline class="w-full h-full object-cover -z-50">
       <source src="images/short_band_clips.mp4" type="video/mp4">
