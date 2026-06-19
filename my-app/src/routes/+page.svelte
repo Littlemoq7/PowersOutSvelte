@@ -4,7 +4,7 @@
 </script>
 
 <div class="w-full h-[65vh] overflow-hidden relative">
-  <div class="w-[90%] max-w-300 flex flex-row justify-between absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
+  <div class="w-[90%] max-w-300 flex max-sm:flex-col max-sm:h-1/2 items-center flex-row justify-between absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
     <FrontPageBigButton text="Music" href="/discography" />
     <FrontPageBigButton text="Members" href="/about" />
     <FrontPageBigButton text="Photos" href="/gallery" />
