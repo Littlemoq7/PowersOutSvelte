@@ -2,6 +2,16 @@
 
 @theme {
 	--color-po: #2a9d8f;
+	--font-sans: 'Work Sans Variable', ui-sans-serif, system-ui, sans-serif;
+	--font-display: 'Oswald Variable', ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Oswald as the accent font for headings; body text keeps the default sans.
+   Links/buttons opt in via the `font-display` utility on their components. */
+@layer base {
+	h1, h2, h3, h4, h5, h6 {
+		font-family: var(--font-display);
+	}
 }
 
 /* Applied by the fadeInOnScroll action before the element is in view. */

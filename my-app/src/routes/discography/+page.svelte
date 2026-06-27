@@ -19,6 +19,3 @@
     </div>
   </div>
 </div>
-<div class="text-white text-center bg-[#2A9D8F]">
-  Power's Out Records
-</div>

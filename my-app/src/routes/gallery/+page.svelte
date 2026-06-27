@@ -28,7 +28,7 @@
 
 <div class="pt-20 bg-[#a8d4cf] text-white min-h-screen">
   <div class="w-[90%] max-w-300 m-auto bg-[#259185] p-4 pt-0">
-    <h1 class="text-white text-3xl font-bold font-sans w-full text-center py-6">
+    <h1 class="text-white text-3xl font-bold w-full text-center py-6">
       GALLERY
     </h1>
     <div class="columns-1 sm:columns-2 lg:columns-3 gap-4">
@@ -42,7 +42,4 @@
       {/each}
     </div>
   </div>
-</div>
-<div class="text-white text-center bg-[#2A9D8F]">
-  Power's Out Records
 </div>

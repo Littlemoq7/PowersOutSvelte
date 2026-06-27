@@ -3,12 +3,10 @@
     let { title, linkText, onclick } = $props();
 </script>
 <a href="/{linkText}" {onclick}>
-    <div class="p-1 pb-px mx-1 h-9 text-white min-w-fit w-full flex justify-between text-nowrap rounded-md text-left hover:font-bold">
+    <div class="pt-1 pb-px px-2 h-9 text-white text-xl w-full text-nowrap rounded-md hover:font-bold font-display">
         {title}
     </div>
     {#if page.url.pathname == "/" + linkText}
-    <div class="h-px pt-0 mt-0 bg-white flex md:mx-3 mx-2">
-
-    </div>
+    <div class="h-px bg-white mx-2"></div>
     {/if}
 </a>

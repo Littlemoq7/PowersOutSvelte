@@ -1,4 +1,6 @@
 <script lang="ts">
+	import '@fontsource-variable/oswald/index.css';
+	import '@fontsource-variable/work-sans/index.css';
 	import './layout.css';
 	import favicon from '$lib/assets/favicon.svg';
 	import NavigationLink from '$lib/components/navigationLink.svelte';
@@ -34,10 +36,10 @@
 <svelte:head><link rel="icon" href={favicon} /></svelte:head>
 <svelte:window bind:scrollY={elementScrollTop} />
 <header class="w-full top-0 fixed z-10000 transition-colors duration-500" class:bg-po={elementScrollTop > 0 || !isHome || menuOpen}>
-	<div class="grid grid-cols-[1fr_auto_1fr] items-center h-20 justify-between w-full max-w-300 mx-auto px-2">
+	<div class="relative flex items-center h-20 justify-center md:justify-between w-full max-w-300 mx-auto px-2">
 		<!-- Hamburger button (mobile only) -->
 		<button
-			class="justify-self-start flex md:hidden flex-col justify-center gap-1.5 w-10 h-10 p-2"
+			class="absolute left-2 top-1/2 -translate-y-1/2 flex md:hidden flex-col justify-center gap-1.5 w-10 h-10 p-2"
 			aria-label="Open menu"
 			aria-expanded={menuOpen}
 			onclick={() => (menuOpen = true)}
@@ -46,18 +48,13 @@
 			<span class="block h-0.5 w-full bg-white rounded"></span>
 			<span class="block h-0.5 w-full bg-white rounded"></span>
 		</button>
-		<!-- Desktop nav links -->
-		<div class="hidden md:flex flex-row justify-self-start">
-			{#each navLinks as { title, linkText }}
-				<NavigationLink {title} {linkText} onclick={closeMenu}></NavigationLink>
-			{/each}
-		</div>
-		<div class="text-white font-semibold text-3xl md:text-4xl justify-self-center text-nowrap" >
+		<div class="text-white font-semibold text-3xl md:text-5xl text-nowrap font-display" >
 			Power's Out
 		</div>
-		<div class="hidden md:flex flex-row justify-self-end">
-			{#each socials as { link, path }}
-				<NavigationBarIcon {link} {path}></NavigationBarIcon>
+		<!-- Desktop nav links -->
+		<div class="hidden md:flex flex-row">
+			{#each navLinks as { title, linkText }}
+				<NavigationLink {title} {linkText} onclick={closeMenu}></NavigationLink>
 			{/each}
 		</div>
 	</div>
@@ -65,25 +62,17 @@
 
 <!-- Mobile slide-out drawer -->
 <div
-	class="fixed inset-0 z-10001 md:hidden transition-opacity duration-300"
+	class="fixed inset-0 z-10001 md:hidden transition-opacity duration-500"
 	class:opacity-0={!menuOpen}
 	class:pointer-events-none={!menuOpen}
 	class:opacity-100={menuOpen}
 >
-	<!-- Backdrop -->
-	<button
-		class="absolute inset-0 w-full h-full bg-black/50"
-		aria-label="Close menu"
-		onclick={closeMenu}
-	></button>
 	<!-- Panel -->
 	<nav
-		class="absolute top-0 left-0 h-full w-72 max-w-[80%] bg-po flex flex-col p-6 shadow-xl transition-transform duration-300"
-		class:-translate-x-full={!menuOpen}
-		class:translate-x-0={menuOpen}
+		class="absolute top-0 left-0 h-full w-full bg-po flex flex-col p-6"
 	>
 		<div class="flex justify-between items-center mb-6">
-			<span class="text-white font-semibold text-2xl">Power's Out</span>
+			<span class="text-white font-semibold text-2xl font-display">Power's Out</span>
 			<button class="text-white text-3xl leading-none px-2" aria-label="Close menu" onclick={closeMenu}>&times;</button>
 		</div>
 		<div class="flex flex-col gap-2 text-xl">
@@ -91,12 +80,23 @@
 				<NavigationLink {title} {linkText} onclick={closeMenu}></NavigationLink>
 			{/each}
 		</div>
-		<div class="flex flex-row gap-2 mt-8">
+		<div class="flex flex-row gap-2 mt-8 mx-auto">
 			{#each socials as { link, path }}
-				<NavigationBarIcon {link} {path}></NavigationBarIcon>
+				<NavigationBarIcon {link} {path} size={'36px'}></NavigationBarIcon>
 			{/each}
 		</div>
 	</nav>
 </div>
 
 {@render children()}
+
+<footer class="w-full bg-po">
+	<div class="max-w-300 mx-auto flex flex-col items-center gap-2 p-2">
+		<div class="flex flex-row justify-center">
+			{#each socials as { link, path }}
+				<NavigationBarIcon {link} {path} size={'28px'}></NavigationBarIcon>
+			{/each}
+		</div>
+		<div class="text-white text-center text-sm font-display">Power's Out Records</div>
+	</div>
+</footer>
