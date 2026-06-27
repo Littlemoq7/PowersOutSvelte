@@ -3,9 +3,9 @@
 </script>
 
 <a
-  class="font-display block text-center text-2xl lg:text-3xl font-semibold text-white
+  class="font-display block text-center text-xl lg:text-2xl font-semibold text-white
     bg-[#259185]/70 hover:bg-[#259185]
-    py-4 px-7 rounded-[50px] transition-colors max-sm:w-full"
+    py-3 px-6 rounded-[50px] transition-colors max-sm:w-full"
   href={href}
 >
   {text}

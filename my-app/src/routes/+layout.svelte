@@ -35,7 +35,7 @@
 
 <svelte:head><link rel="icon" href={favicon} /></svelte:head>
 <svelte:window bind:scrollY={elementScrollTop} />
-<header class="w-full top-0 fixed z-10000 transition-colors duration-500" class:bg-po={elementScrollTop > 0 || !isHome || menuOpen}>
+<header class="w-full top-0 fixed z-10000 transition-colors duration-500" class:bg-po={elementScrollTop > 50 || !isHome || menuOpen}>
 	<div class="relative flex items-center h-20 justify-center md:justify-between w-full max-w-300 mx-auto px-2">
 		<!-- Hamburger button (mobile only) -->
 		<button
@@ -48,7 +48,7 @@
 			<span class="block h-0.5 w-full bg-white rounded"></span>
 			<span class="block h-0.5 w-full bg-white rounded"></span>
 		</button>
-		<div class="text-white font-semibold text-3xl md:text-5xl text-nowrap font-display" >
+		<div class="text-white font-semibold text-3xl md:text-5xl text-nowrap font-display transition-opacity duration-500" class:opacity-0={elementScrollTop < 50 && isHome}>
 			Power's Out
 		</div>
 		<!-- Desktop nav links -->

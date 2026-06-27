@@ -4,17 +4,29 @@
 </script>
 
 <div class="w-full h-[65vh] overflow-hidden relative">
-  <div class="w-[90%] max-w-300 max-sm:w-64 flex flex-row max-sm:flex-col items-center justify-between max-sm:gap-10 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
-    <FrontPageBigButton text="Music" href="/discography" />
-    <FrontPageBigButton text="Members" href="/about" />
-    <FrontPageBigButton text="Photos" href="/gallery" />
-  </div>
-    <div class="bg-black w-full h-full opacity-40 absolute pointer-events-none">
+  <!-- Wordmark + tagline over the video -->
+  <div class="absolute inset-0 z-10 flex flex-col items-center justify-center text-center text-white px-4">
+    <h1 class="font-display font-bold text-5xl sm:text-7xl md:text-8xl tracking-wide drop-shadow-lg">
+      Power's Out
+    </h1>
+    <p class="mt-3 max-w-xl text-md md:text-lg text-white/90 drop-shadow-md">
+      Est. in Hollis, NH
+      <br>
+      rock, pop, jam band
+    </p>
+    <div class="mt-8 max-sm:w-64 flex flex-row max-sm:flex-col items-center justify-center gap-4">
+      <FrontPageBigButton text="Music" href="/discography" />
+      <FrontPageBigButton text="Members" href="/about" />
+      <FrontPageBigButton text="Photos" href="/gallery" />
     </div>
-    <video autoplay loop muted playsinline class="w-full h-full object-cover -z-50">
-      <source src="images/short_band_clips.mp4" type="video/mp4">
-    </video>
+  </div>
+  <div class="bg-black w-full h-full opacity-40 absolute pointer-events-none">
+  </div>
+  <video autoplay loop muted playsinline class="w-full h-full object-cover -z-50">
+    <source src="images/short_band_clips.mp4" type="video/mp4">
+  </video>
 </div>
+
 <div class="flex-col h-full bg-[#a8d4cf] text-white pt-10 pb-0">
   <div class="flex-col w-[90%] max-w-300 mx-auto bg-[#259185] rounded-t">
     <div class="w-full md:px-10 px-4 py-8 text-center" use:fadeInOnScroll>
