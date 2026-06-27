@@ -27,3 +27,13 @@
 	opacity: 1;
 	transform: none;
 }
+
+/* Applied by the fadeInOnLoad action: image starts hidden, fades in once decoded. */
+.img-fade-in {
+	opacity: 0;
+	transition: opacity 0.5s ease-out;
+}
+
+.img-fade-in.img-loaded {
+	opacity: 1;
+}
