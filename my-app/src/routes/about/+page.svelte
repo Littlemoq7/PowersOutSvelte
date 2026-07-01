@@ -4,7 +4,7 @@
 </script>
 
 <div class="pt-20 bg-[#a8d4cf] text-white">
-  <div class="w-[90%] max-w-300 mx-auto bg-[#259185]">
+  <div class="w-[90%] max-w-300 mx-auto bg-[#259185] mt-10 rounded-t">
     <div class="text-3xl font-bold font-sans text-center w-full text-nowrap py-6">
       <h1>ABOUT</h1>
     </div>

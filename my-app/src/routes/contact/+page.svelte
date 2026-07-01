@@ -1,5 +1,5 @@
-<div class="bg-[#a8d4cf] min-h-[calc(100vh-1.5rem)] flex flex-col">
-  <section class="flex flex-col justify-center items-center px-5 flex-1 box-border w-[90%] max-w-300 mx-auto bg-[#259185]">
+<div class="bg-[#a8d4cf] min-h-[calc(100vh-80px)] flex flex-col pt-20">
+  <section class="flex flex-col justify-center items-center px-5 flex-1 box-border w-[90%] max-w-300 mx-auto bg-[#259185] mt-10 rounded-t">
     <h1 class="text-white text-3xl font-bold w-full text-center py-6">CONTACT THE BAND</h1>
     <div class="w-full">
       <p class="text-xl text-white text-center pt-2.5 pb-3.75">Fill in your contact and message below: </p>

@@ -4,7 +4,7 @@
 </script>
 
 <div class="pt-20 bg-[#a8d4cf] text-white">
-  <div class="w-[90%] max-w-300 m-auto bg-[#259185]">
+  <div class="w-[90%] max-w-300 m-auto bg-[#259185] mt-10 rounded-t">
     <div class="text-white text-3xl font-bold font-sans w-full text-center">
       <h1 class="py-6">RELEASES</h1>
       <div class="flex flex-auto flex-wrap justify-center gap-10 px-4 pb-4">
