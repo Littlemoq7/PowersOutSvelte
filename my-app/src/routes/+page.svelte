@@ -25,8 +25,9 @@
 ];
 </script>
 
+<!-- hero -->
 <div class="w-full h-[65vh] overflow-hidden relative">
-  <!-- Wordmark + tagline over the video -->
+  <!-- wordmark over the video -->
   <div class="absolute inset-0 z-10 flex flex-col items-center justify-center text-center text-white px-4">
     <h1 class="font-display font-bold text-5xl sm:text-7xl md:text-8xl tracking-wide drop-shadow-lg">
       Power's Out
@@ -49,28 +50,25 @@
   </video>
 </div>
 
+<!-- main page -->
 <div class="flex-col h-full bg-[#a8d4cf] text-white pt-10 pb-0">
   <div class="flex-col w-[90%] max-w-300 mx-auto bg-[#259185] rounded-t">
-    <div class="w-full md:px-12 px-4 py-4 text-center text-white" use:fadeInOnScroll>
-      <!-- eyebrow -->
+    <div class="w-full md:px-12 px-4 py-4 text-center text-white">
       <div class="inline-flex items-center gap-2.5 mb-4">
         <span class="w-5 h-0.5 bg-white/55"></span>
         <span class="font-display text-xs tracking-[0.22em] uppercase text-white/85">Hollis, NH &middot; Since 2021</span>
         <span class="w-5 h-0.5 bg-white/55"></span>
       </div>
 
-      <!-- headline -->
       <h2 class="font-display font-bold text-2xl md:text-3xl tracking-tight uppercase mb-5">
         Originals, covers &amp; jams
       </h2>
 
-      <!-- blurb -->
       <p class="text-base md:text-lg leading-relaxed text-white/90 max-w-xl mx-auto mb-7">
         Playing originals and covers, rock, pop, blues, country, funk, jam band, and more. 
         Click the YouTube icon to watch some of our performances, and see the contact page for booking &amp; inquiries.
       </p>
 
-      <!-- listen & follow -->
       <div class="border-b border-white/20 pb-8">
         <div class="font-display text-xs tracking-[0.2em] uppercase text-white/65 mb-4">Listen &amp; follow</div>
         <div class="flex justify-center gap-4">
@@ -91,11 +89,11 @@
         </div>
       </div>
     </div>
-    <div class="w-full md:px-10 px-4 py-8" use:fadeInOnScroll>
+    <div class="w-full md:px-10 px-4 py-8">
       <div class="m-auto text-center pb-4">
         <h2 class="font-semibold text-xl">Live Performances</h2>
       </div>
-      <div class="flex flex-col lg:flex-row justify-evenly gap-6">
+      <div class="flex flex-col lg:flex-row justify-evenly gap-6" use:fadeInOnScroll>
         <div class="flex-1">
           <iframe
             class="aspect-video rounded"
@@ -118,11 +116,11 @@
         </div>
       </div>
     </div>
-    <div class="w-full md:px-10 px-4 py-8" use:fadeInOnScroll>
+    <div class="w-full md:px-10 px-4 py-8">
       <div class="m-auto text-center pb-4">
         <h2 class="font-semibold text-xl">Studio Recordings</h2>
       </div>
-      <div class="flex flex-col lg:flex-row gap-6">
+      <div class="flex flex-col lg:flex-row gap-6" use:fadeInOnScroll>
         <iframe src="https://open.spotify.com/embed/album/5bdC7E9TVlThVvLa6mfOLf" title="Spotify Web Player" frameborder="0" allow="encrypted-media" class="block w-full h-120 mx-auto"></iframe>
         <iframe src="https://open.spotify.com/embed/album/3IHaBNiFiySaTuXeBg12i5" title="Spotify Web Player" frameborder="0" allow="encrypted-media" class="block w-full min-h-88 mx-auto"></iframe>        
       </div>
