@@ -60,7 +60,7 @@
         <span class="w-5 h-0.5 bg-white/55"></span>
       </div>
 
-      <h2 class="font-display font-bold text-2xl md:text-3xl tracking-tight uppercase mb-5">
+      <h2 class="font-display font-bold text-2xl md:text-4xl tracking-tight uppercase mb-5">
         Originals, covers &amp; jams
       </h2>
 

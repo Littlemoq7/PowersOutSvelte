@@ -5,7 +5,7 @@
 
 <div class="pt-20 bg-[#a8d4cf] text-white">
   <div class="w-[90%] max-w-300 m-auto bg-[#259185] mt-10 rounded-t">
-    <div class="text-white text-3xl font-bold font-sans w-full text-center">
+    <div class="text-white text-4xl font-bold font-sans w-full text-center">
       <h1 class="py-6">RELEASES</h1>
       <div class="flex flex-auto flex-wrap justify-center gap-10 px-4 pb-4">
         <ReleaseCard text="Basement Sessions, Vol. 1" picture="images/basement_sessions_vol1.webp" year="2026" link="https://open.spotify.com/album/3IHaBNiFiySaTuXeBg12i5?si=1bYKzjSuSoawUOFQIys7uA"/>

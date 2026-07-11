@@ -9,7 +9,7 @@
       duration-200 ease-in-out hover:scale-101 hover:shadow-[2px_2px_5px_3px_rgba(0,0,0,0.4)] bg-[#2A9D8F]">
   </a>
   <div class="flex-col items-center text-center md:w-2/5">
-    <div class="bg-[#2A9D8F] rounded-xl py-2.5 px-4">
+    <div class="bg-[#259185] py-10 px-4 border-y-2 border-transparent [border-image:linear-gradient(to_right,transparent,rgba(255,255,255,0.3),transparent)_1]">
       <h2 class="text-3xl">{name}</h2>
       <h3 class="text-xl py-2.5">{instrument}</h3>
       <p>{bio}</p>

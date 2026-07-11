@@ -71,7 +71,7 @@
 
 <div class="pt-20 bg-[#a8d4cf] text-white min-h-screen">
   <div class="w-[90%] max-w-300 m-auto bg-[#259185] p-4 pt-0 mt-10 rounded-t">
-    <h1 class="text-white text-3xl font-bold w-full text-center py-6">
+    <h1 class="text-white text-4xl font-bold w-full text-center py-6">
       GALLERY
     </h1>
     <div class="columns-1 sm:columns-2 lg:columns-3 gap-4">
