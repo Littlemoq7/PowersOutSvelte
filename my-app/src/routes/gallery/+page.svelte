@@ -2,9 +2,9 @@
   import { fadeInOnLoad } from "$lib/actions/fadeInOnLoad.js";
 
   // Photos live in static/images/home_images/ as resized WebP (~1600px, q80).
-  // Full-resolution originals are kept in my-app/photo-originals/ (not deployed).
+  // Full-resolution originals are kept in my-app/photo-originals/.
   // Absolute paths so they resolve correctly regardless of the current route.
-  // width/height are the real pixel dimensions — they reserve aspect-ratio space
+  // width/height are the real pixel dimensions, they reserve aspect-ratio space
   // so the masonry layout doesn't jump as images load in.
   const images = [
     { src: "/images/home_images/full_band1.webp", alt: "Power's Out full band", w: 1600, h: 1200 },
@@ -28,7 +28,46 @@
     { src: "/images/home_images/connor.webp", alt: "Connor", w: 1600, h: 1067 },
     { src: "/images/home_images/connor_and_meghan.webp", alt: "Connor and Meghan", w: 1200, h: 1600 }
   ];
+
+  // Index of the lightbox image currently being viewed, or null when closed
+  let selectedIndex = $state(/** @type {number | null} */ (null));
+
+  /** @param {number} i */
+  function open(i) {
+    selectedIndex = i;
+  }
+
+  function close() {
+    selectedIndex = null;
+  }
+
+  function prev() {
+    if (selectedIndex === null) return;
+    selectedIndex = (selectedIndex - 1 + images.length) % images.length;
+  }
+
+  function next() {
+    if (selectedIndex === null) return;
+    selectedIndex = (selectedIndex + 1) % images.length;
+  }
+
+  /** @param {KeyboardEvent} e */
+  function onKeydown(e) {
+    if (selectedIndex === null) return;
+    if (e.key === "Escape") close();
+    else if (e.key === "ArrowLeft") prev();
+    else if (e.key === "ArrowRight") next();
+  }
+
+  // Lock background scroll while the viewer is open
+  $effect(() => {
+    if (typeof document === "undefined") return;
+    document.body.style.overflow = selectedIndex === null ? "" : "hidden";
+    return () => (document.body.style.overflow = "");
+  });
 </script>
+
+<svelte:window onkeydown={onKeydown} />
 
 <div class="pt-20 bg-[#a8d4cf] text-white min-h-screen">
   <div class="w-[90%] max-w-300 m-auto bg-[#259185] p-4 pt-0 mt-10 rounded-t">
@@ -36,18 +75,63 @@
       GALLERY
     </h1>
     <div class="columns-1 sm:columns-2 lg:columns-3 gap-4">
-      {#each images as image}
-        <img
-          src={image.src}
-          alt={image.alt}
-          width={image.w}
-          height={image.h}
-          loading="lazy"
-          decoding="async"
-          use:fadeInOnLoad
-          class="mb-4 w-full h-auto rounded-xl break-inside-avoid transition-transform duration-200 ease-in-out hover:scale-101"
-        />
+      {#each images as image, i}
+        <button
+          type="button"
+          onclick={() => open(i)}
+          aria-label="View {image.alt}"
+          class="mb-4 block w-full break-inside-avoid cursor-pointer rounded-xl"
+        >
+          <img
+            src={image.src}
+            alt={image.alt}
+            width={image.w}
+            height={image.h}
+            loading="lazy"
+            decoding="async"
+            use:fadeInOnLoad
+            class="w-full h-auto rounded-xl transition-all duration-200 ease-in-out hover:scale-103"
+          />
+        </button>
       {/each}
     </div>
   </div>
 </div>
+
+{#if selectedIndex !== null}
+  <!-- Lightbox overlay, offset below the fixed h-20 (80px) nav bar so the
+       image centers in the visible area and never slides under the nav.
+       Clicking the dimmed backdrop closes the viewer. -->
+  <div
+    class="fixed top-20 right-0 bottom-0 left-0 z-50 flex flex-col items-center justify-center bg-black/70 p-4"
+    onclick={(e) => {
+      if (e.target === e.currentTarget) close();
+    }}
+    role="presentation"
+  >
+    <img
+      src={images[selectedIndex].src}
+      alt={images[selectedIndex].alt}
+      class="max-w-[92vw] max-h-[72vh] object-contain rounded-xl shadow-2xl"
+    />
+
+    <div class="mt-6 flex items-center gap-8">
+      <button
+        type="button"
+        onclick={prev}
+        aria-label="Previous image"
+        class="flex h-14 w-14 items-center justify-center rounded-full bg-[#259185] text-3xl leading-none text-white shadow-lg transition-transform duration-150 hover:scale-110 hover:bg-[#1f7a70]"
+      >
+        &#8249;
+      </button>
+      <button
+        type="button"
+        onclick={next}
+        aria-label="Next image"
+        class="flex h-14 w-14 items-center justify-center rounded-full bg-[#259185] text-3xl leading-none text-white shadow-lg transition-transform duration-150 hover:scale-110 hover:bg-[#1f7a70]"
+      >
+        &#8250;
+      </button>
+    </div>
+  </div>
+{/if}
