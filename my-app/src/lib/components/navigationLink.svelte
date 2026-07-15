@@ -7,6 +7,6 @@
         {title}
     </div>
     {#if page.url.pathname == "/" + linkText}
-    <div class="h-px bg-white mx-2"></div>
+    <div class="h-0.5 bg-po-accent mx-2 rounded-full"></div>
     {/if}
 </a>

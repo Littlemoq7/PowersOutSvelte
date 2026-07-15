@@ -1,7 +1,7 @@
 <script>
   let { text, picture, year, link } = $props();
 </script>
-<div class="bg-po-surface border border-po-line duration-300 ease-in-out hover:scale-102">
+<div class="bg-po-surface border border-po-line transition duration-300 ease-in-out hover:scale-102 hover:border-po-accent">
   <a
     href={link}
     target="_blank"
@@ -10,7 +10,7 @@
     <img
       src={picture}
       alt={text}
-      class="w-full aspect-square object-cover transition-transform border-b"
+      class="w-full aspect-square object-cover transition border-b hover:border-po-accent"
     />
     <p class="mt-3 text-base font-normal font-sans">{text}</p>
     <p class="mb-3 text-sm font-light font-sans opacity-80">{year}</p>

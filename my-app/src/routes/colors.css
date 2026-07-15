@@ -1,14 +1,12 @@
-/* Brand color palette.
-   Defined as Tailwind v4 @theme tokens, so each one generates the usual color
-   utilities (bg-*, text-*, border-*, fill-*, ring-*, …) and is also available
-   as the CSS variable var(--color-<name>). Opacity modifiers work too, e.g.
-   bg-po-surface/70. */
 @theme {
 	--color-po: #2a9d8f; /* primary brand teal */
 	--color-po-surface: #259185; /* card / button surface (workhorse teal) */
 	--color-po-surface-dark: #1f7a70; /* surface button hover */
 	--color-po-deep: #134d46; /* deep hover / darkest teal */
-	--color-po-tint: #a8d4cf; /* light page background tint */
+	--color-po-tint: #e9e1df; /* light page background tint */
 	--color-po-border: #ccc; /* neutral form input border */
 	--color-po-line: #cef0ec; /* subtle whiteish outline for cards/sections (border-po-line) */
+
+	--color-po-accent: #e37b62; /* primary coral accent */
+	--color-po-accent-dark: #d95838; /* deeper coral for hover / pressed */
 }

@@ -69,9 +69,10 @@
 
 <div class="pt-20 bg-po-tint text-white min-h-screen">
   <div class="w-full bg-po-surface border-y border-po-line">
-    <h1 class="text-white text-4xl font-bold w-full text-center py-6">
+    <h1 class="text-white text-4xl font-bold w-full text-center pt-6">
       GALLERY
     </h1>
+    <div class="mx-auto mt-3 mb-6 h-1 w-16 rounded-full bg-po-accent"></div>
   </div>
   <div class="max-w-7xl m-auto p-4">
     <div class="columns-1 sm:columns-2 lg:columns-3 gap-4">
@@ -119,7 +120,7 @@
         type="button"
         onclick={prev}
         aria-label="Previous image"
-        class="flex h-14 w-14 items-center justify-center rounded-full bg-po-surface text-3xl leading-none text-white shadow-lg transition-transform duration-150 hover:scale-110 hover:bg-po-surface-dark"
+        class="flex h-14 w-14 items-center justify-center rounded-full bg-po-surface text-3xl leading-none text-white shadow-lg transition duration-150 hover:scale-110 hover:bg-po-accent"
       >
         &#8249;
       </button>
@@ -127,7 +128,7 @@
         type="button"
         onclick={next}
         aria-label="Next image"
-        class="flex h-14 w-14 items-center justify-center rounded-full bg-po-surface text-3xl leading-none text-white shadow-lg transition-transform duration-150 hover:scale-110 hover:bg-po-surface-dark"
+        class="flex h-14 w-14 items-center justify-center rounded-full bg-po-surface text-3xl leading-none text-white shadow-lg transition duration-150 hover:scale-110 hover:bg-po-accent"
       >
         &#8250;
       </button>

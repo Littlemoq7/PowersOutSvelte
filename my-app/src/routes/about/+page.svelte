@@ -8,6 +8,7 @@
     <div class="text-4xl font-bold font-sans text-center w-full text-nowrap">
       <h1>ABOUT</h1>
     </div>
+    <div class="mx-auto mt-3 mb-4 h-1 w-16 rounded-full bg-po-accent"></div>
     <div class="md:px-20 px-10 pb-6 text-center mx-auto max-w-250">
       Power's Out is a Hollis, NH band that has been playing together since high school. They blend a range of styles
       like rock, jam-band, funk, and blues into a modern sound in both their covers and original music.
@@ -27,7 +28,7 @@
         instrument="Guitar"
         bio="Connor has been playing guitar since he was very young. Taught to play as a kid by his father, he has since worked to become proficient in various styles, including rock, blues, pop, jazz, metal, and more. He currently attends Boston College and is majoring in Mathematics and Computer Science."
       />
-      <MemberBioCard 
+      <MemberBioCard
         name="Katherin Jokinen"
         picture="images/katherin_pic.webp"
         width={1066}
@@ -46,7 +47,7 @@
         bio="Elliott has been playing bass since the start of high school. He enjoys playing funk and rock, but is willing to try out almost any genre. Studying Computer Science at Purdue University, he spends his time on the weekends in a Grateful Dead cover band."
       />
 
-      <MemberBioCard 
+      <MemberBioCard
         name="Meghan Warren"
         picture="images/meghan_bio.webp"
         width={1170}

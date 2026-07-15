@@ -54,14 +54,15 @@
 <div class="flex-col h-full bg-po-tint text-white">
   <div class="relative isolate w-full md:px-12 px-4 pb-4 p-8 text-center text-white bg-po-surface border-y border-po-line">
     <div class="inline-flex items-center gap-2.5 mb-4">
-      <span class="w-5 h-0.5 bg-white/55"></span>
+      <span class="w-5 h-0.5 bg-po-accent"></span>
       <span class="font-display text-xs tracking-[0.22em] uppercase text-white/85">Hollis, NH &middot; Since 2021</span>
-      <span class="w-5 h-0.5 bg-white/55"></span>
+      <span class="w-5 h-0.5 bg-po-accent"></span>
     </div>
 
-    <h2 class="font-display font-bold text-2xl md:text-4xl tracking-tight uppercase mb-5">
+    <h2 class="font-display font-bold text-2xl md:text-4xl tracking-tight uppercase mb-4">
       Originals, covers &amp; jams
     </h2>
+    <div class="mx-auto mb-6 h-1 w-16 rounded-full bg-po-accent"></div>
 
     <p class="text-base md:text-lg leading-relaxed text-white/90 max-w-xl mx-auto mb-7">
       Playing originals and covers, rock, pop, blues, country, funk, jam band, and more. 
@@ -78,9 +79,9 @@
             target="_blank"
             rel="noopener"
             class="group flex items-center justify-center w-14 h-14 rounded-full bg-white/10 border border-po-line/30
-                  transition-all duration-200 hover:-translate-y-1 hover:bg-white"
+                  transition-all duration-200 hover:-translate-y-1 hover:bg-po-accent hover:border-po-accent"
           >
-            <svg viewBox={viewBox} class="w-7 h-7 fill-white transition-colors group-hover:fill-po-surface">
+            <svg viewBox={viewBox} class="w-7 h-7 fill-white transition-colors group-hover:fill-white">
               <path d={path} />
             </svg>
           </a>
@@ -92,6 +93,7 @@
     <div class="w-full md:px-10 p-4 py-6 bg-po-surface border border-po-line">
       <div class="m-auto text-center pb-4">
         <h2 class="font-semibold text-xl">Live Performances</h2>
+        <div class="mx-auto mt-2 h-1 w-12 rounded-full bg-po-accent"></div>
       </div>
       <div class="flex flex-col lg:flex-row justify-evenly gap-6">
         <div class="flex-1 border border-po-line/50">
@@ -119,6 +121,7 @@
     <div class="w-full md:px-10 px-4 py-6 bg-po-surface border border-po-line">
       <div class="m-auto text-center pb-4">
         <h2 class="font-semibold text-xl">Studio Recordings</h2>
+        <div class="mx-auto mt-2 h-1 w-12 rounded-full bg-po-accent"></div>
       </div>
       <div class="flex flex-col lg:flex-row gap-6 *:border *:border-po-line/50 *:rounded-xl">
         <iframe src="https://open.spotify.com/embed/album/5bdC7E9TVlThVvLa6mfOLf" title="Spotify Web Player" frameborder="0" allow="encrypted-media" class="block w-full h-120"></iframe>

@@ -5,7 +5,8 @@
 
 <div class="pt-20 bg-po-tint text-white">
   <div class="w-full bg-po-surface border-y border-po-line text-white text-4xl font-bold font-sans text-center">
-    <h1 class="py-6">RELEASES</h1>
+    <h1 class="pt-6">RELEASES</h1>
+    <div class="mx-auto mt-3 mb-6 h-1 w-16 rounded-full bg-po-accent"></div>
   </div>
   <div class="max-w-7xl m-auto">
     <div class="flex flex-auto flex-wrap justify-center gap-10 px-4 py-8">

@@ -9,6 +9,7 @@
   </a>
   <div class="w-full md:flex-1 text-center px-4 py-8">
     <h2 class="text-3xl">{name}</h2>
+    <div class="mx-auto mt-3 h-1 w-10 rounded-full bg-po-accent"></div>
     <h3 class="text-xl py-2.5">{instrument}</h3>
     <p>{bio}</p>
   </div>
