@@ -94,9 +94,9 @@
         <h2 class="font-semibold text-xl">Live Performances</h2>
       </div>
       <div class="flex flex-col lg:flex-row justify-evenly gap-6">
-        <div class="flex-1">
+        <div class="flex-1 border border-white">
           <iframe
-            class="aspect-video rounded"
+            class="w-full aspect-video"
             src="https://www.youtube.com/embed/0dMOQbHaTFQ"
             title="YouTube video 1"
             frameborder="0"
@@ -104,9 +104,9 @@
             allowfullscreen>
           </iframe>          
         </div>
-        <div class="flex-1">
+        <div class="flex-1 border border-white">
           <iframe
-            class="aspect-video rounded"
+            class="w-full aspect-video"
             src="https://www.youtube.com/embed/7ck34b_bklE"
             title="YouTube video 2"
             frameborder="0"
@@ -120,9 +120,9 @@
       <div class="m-auto text-center pb-4">
         <h2 class="font-semibold text-xl">Studio Recordings</h2>
       </div>
-      <div class="flex flex-col lg:flex-row gap-6">
-        <iframe src="https://open.spotify.com/embed/album/5bdC7E9TVlThVvLa6mfOLf" title="Spotify Web Player" frameborder="0" allow="encrypted-media" class="block w-full h-120 mx-auto"></iframe>
-        <iframe src="https://open.spotify.com/embed/album/3IHaBNiFiySaTuXeBg12i5" title="Spotify Web Player" frameborder="0" allow="encrypted-media" class="block w-full min-h-88 mx-auto"></iframe>        
+      <div class="flex flex-col lg:flex-row gap-6 *:border *:border-white *:rounded-xl">
+        <iframe src="https://open.spotify.com/embed/album/5bdC7E9TVlThVvLa6mfOLf" title="Spotify Web Player" frameborder="0" allow="encrypted-media" class="block w-full h-120"></iframe>
+        <iframe src="https://open.spotify.com/embed/album/3IHaBNiFiySaTuXeBg12i5" title="Spotify Web Player" frameborder="0" allow="encrypted-media" class="block w-full h-120"></iframe>
       </div>
     </div>
   </div>
