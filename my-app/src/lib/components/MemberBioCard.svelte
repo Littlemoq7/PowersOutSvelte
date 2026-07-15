@@ -2,7 +2,7 @@
   let { name, picture, igLink, instrument, bio, width, height } = $props();
 </script>
 
-<div class="flex flex-col md:flex-row items-center gap-6 max-w-4xl w-[95%] mx-auto bg-po-surface p-4">
+<div class="flex flex-col md:flex-row items-center gap-6 max-w-4xl w-[95%] mx-auto bg-po-surface border border-white p-4">
   <a href={igLink} target="_blank" class="block w-full md:w-2/5 md:shrink-0">
     <img src={picture} alt={name} width={width} height={height} class="p-5 w-full h-auto shadow-[2px_2px_5px_1px_rgba(0,0,0,0.4)] transition-transform
       duration-200 ease-in-out hover:scale-101 hover:shadow-[2px_2px_5px_3px_rgba(0,0,0,0.4)] bg-po">

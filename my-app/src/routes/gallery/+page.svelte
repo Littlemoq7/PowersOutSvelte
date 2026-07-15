@@ -70,7 +70,7 @@
 <svelte:window onkeydown={onKeydown} />
 
 <div class="pt-20 bg-po-tint text-white min-h-screen">
-  <div class="w-full bg-po-surface">
+  <div class="w-full bg-po-surface border-y border-white">
     <h1 class="text-white text-4xl font-bold w-full text-center py-6">
       GALLERY
     </h1>

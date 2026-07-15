@@ -52,7 +52,7 @@
 
 <!-- main page -->
 <div class="flex-col h-full bg-po-tint text-white">
-  <div class="relative isolate w-full md:px-12 px-4 pb-4 p-8 text-center text-white bg-po-surface">
+  <div class="relative isolate w-full md:px-12 px-4 pb-4 p-8 text-center text-white bg-po-surface border-y border-white">
     <div class="inline-flex items-center gap-2.5 mb-4">
       <span class="w-5 h-0.5 bg-white/55"></span>
       <span class="font-display text-xs tracking-[0.22em] uppercase text-white/85">Hollis, NH &middot; Since 2021</span>
@@ -89,7 +89,7 @@
     </div>
   </div>
   <div class="flex flex-col max-w-7xl w-[95%] mx-auto gap-12 py-12">
-    <div class="w-full md:px-10 p-4 py-6 bg-po-surface">
+    <div class="w-full md:px-10 p-4 py-6 bg-po-surface border border-white">
       <div class="m-auto text-center pb-4">
         <h2 class="font-semibold text-xl">Live Performances</h2>
       </div>
@@ -116,7 +116,7 @@
         </div>
       </div>
     </div>
-    <div class="w-full md:px-10 px-4 py-6 bg-po-surface">
+    <div class="w-full md:px-10 px-4 py-6 bg-po-surface border border-white">
       <div class="m-auto text-center pb-4">
         <h2 class="font-semibold text-xl">Studio Recordings</h2>
       </div>

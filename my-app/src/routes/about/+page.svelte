@@ -4,7 +4,7 @@
 </script>
 
 <div class="pt-20 bg-po-tint text-white">
-  <div class="w-full bg-po-surface py-6">
+  <div class="w-full bg-po-surface border-y border-white py-6">
     <div class="text-4xl font-bold font-sans text-center w-full text-nowrap">
       <h1>ABOUT</h1>
     </div>

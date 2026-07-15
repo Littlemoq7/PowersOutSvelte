@@ -1,7 +1,7 @@
 <script>
   let { text, picture, year, link } = $props();
 </script>
-<div class="bg-po-surface">
+<div class="bg-po-surface border border-white">
   <a
     href={link}
     target="_blank"
