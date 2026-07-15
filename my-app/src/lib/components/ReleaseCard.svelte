@@ -1,8 +1,7 @@
 <script>
-  import { fadeInOnScroll } from "$lib/actions/fadeInOnScroll";
   let { text, picture, year, link } = $props();
 </script>
-<div use:fadeInOnScroll>
+<div class="bg-po-surface">
   <a
     href={link}
     target="_blank"
@@ -11,11 +10,11 @@
     <img
       src={picture}
       alt={text}
-      class="w-full aspect-square object-cover rounded shadow-lg
-      transition-transform duration-200 ease-in-out hover:scale-105"
+      class="w-full aspect-square object-cover hover:shadow-lg
+      transition-transform duration-200 ease-in-out hover:scale-102"
     />
     <p class="mt-3 text-base font-normal font-sans">{text}</p>
-    <p class="text-sm font-light font-sans opacity-80">{year}</p>
+    <p class="mb-3 text-sm font-light font-sans opacity-80">{year}</p>
   </a>  
 </div>
 

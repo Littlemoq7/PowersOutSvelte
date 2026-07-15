@@ -1,6 +1,6 @@
 <script>
   import FrontPageBigButton from "$lib/components/FrontPageBigButton.svelte";
-  import { fadeInOnScroll } from "$lib/actions/fadeInOnScroll.js";
+  
   const socials = [
   {
     link: 'https://open.spotify.com/artist/4qEGLVNJT3OfCqBKsRHvcG',
@@ -51,49 +51,49 @@
 </div>
 
 <!-- main page -->
-<div class="flex-col h-full bg-[#a8d4cf] text-white pt-10 pb-0">
-  <div class="flex-col w-[90%] max-w-300 mx-auto bg-[#259185] rounded-t">
-    <div class="w-full md:px-12 px-4 py-4 text-center text-white">
-      <div class="inline-flex items-center gap-2.5 mb-4">
-        <span class="w-5 h-0.5 bg-white/55"></span>
-        <span class="font-display text-xs tracking-[0.22em] uppercase text-white/85">Hollis, NH &middot; Since 2021</span>
-        <span class="w-5 h-0.5 bg-white/55"></span>
-      </div>
+<div class="flex-col h-full bg-po-tint text-white">
+  <div class="relative isolate w-full md:px-12 px-4 pb-4 p-8 text-center text-white bg-po-surface">
+    <div class="inline-flex items-center gap-2.5 mb-4">
+      <span class="w-5 h-0.5 bg-white/55"></span>
+      <span class="font-display text-xs tracking-[0.22em] uppercase text-white/85">Hollis, NH &middot; Since 2021</span>
+      <span class="w-5 h-0.5 bg-white/55"></span>
+    </div>
 
-      <h2 class="font-display font-bold text-2xl md:text-4xl tracking-tight uppercase mb-5">
-        Originals, covers &amp; jams
-      </h2>
+    <h2 class="font-display font-bold text-2xl md:text-4xl tracking-tight uppercase mb-5">
+      Originals, covers &amp; jams
+    </h2>
 
-      <p class="text-base md:text-lg leading-relaxed text-white/90 max-w-xl mx-auto mb-7">
-        Playing originals and covers, rock, pop, blues, country, funk, jam band, and more. 
-        Click the YouTube icon to watch some of our performances, and see the contact page for booking &amp; inquiries.
-      </p>
+    <p class="text-base md:text-lg leading-relaxed text-white/90 max-w-xl mx-auto mb-7">
+      Playing originals and covers, rock, pop, blues, country, funk, jam band, and more. 
+      Click the YouTube icon to watch some of our performances, and see the contact page for booking &amp; inquiries.
+    </p>
 
-      <div class="border-b border-white/20 pb-8">
-        <div class="font-display text-xs tracking-[0.2em] uppercase text-white/65 mb-4">Listen &amp; follow</div>
-        <div class="flex justify-center gap-4">
-          {#each socials as { link, path, viewBox }}
-            <a
-              aria-label=social-media-link
-              href={link}
-              target="_blank"
-              rel="noopener"
-              class="group flex items-center justify-center w-14 h-14 rounded-full bg-white/10 border border-white/20
-                    transition-all duration-200 hover:-translate-y-1 hover:bg-white"
-            >
-              <svg viewBox={viewBox} class="w-7 h-7 fill-white transition-colors group-hover:fill-[#259185]">
-                <path d={path} />
-              </svg>
-            </a>
-          {/each}
-        </div>
+    <div class="pb-8">
+      <div class="font-display text-xs tracking-[0.2em] uppercase text-white/65 mb-4">Listen &amp; follow</div>
+      <div class="flex justify-center gap-4">
+        {#each socials as { link, path, viewBox }}
+          <a
+            aria-label=social-media-link
+            href={link}
+            target="_blank"
+            rel="noopener"
+            class="group flex items-center justify-center w-14 h-14 rounded-full bg-white/10 border border-white/20
+                  transition-all duration-200 hover:-translate-y-1 hover:bg-white"
+          >
+            <svg viewBox={viewBox} class="w-7 h-7 fill-white transition-colors group-hover:fill-po-surface">
+              <path d={path} />
+            </svg>
+          </a>
+        {/each}
       </div>
     </div>
-    <div class="w-full md:px-10 px-4 py-8">
+  </div>
+  <div class="flex flex-col max-w-7xl w-[95%] mx-auto gap-12 py-12">
+    <div class="w-full md:px-10 p-4 py-6 bg-po-surface">
       <div class="m-auto text-center pb-4">
         <h2 class="font-semibold text-xl">Live Performances</h2>
       </div>
-      <div class="flex flex-col lg:flex-row justify-evenly gap-6" use:fadeInOnScroll>
+      <div class="flex flex-col lg:flex-row justify-evenly gap-6">
         <div class="flex-1">
           <iframe
             class="aspect-video rounded"
@@ -116,11 +116,11 @@
         </div>
       </div>
     </div>
-    <div class="w-full md:px-10 px-4 py-8">
+    <div class="w-full md:px-10 px-4 py-6 bg-po-surface">
       <div class="m-auto text-center pb-4">
         <h2 class="font-semibold text-xl">Studio Recordings</h2>
       </div>
-      <div class="flex flex-col lg:flex-row gap-6" use:fadeInOnScroll>
+      <div class="flex flex-col lg:flex-row gap-6">
         <iframe src="https://open.spotify.com/embed/album/5bdC7E9TVlThVvLa6mfOLf" title="Spotify Web Player" frameborder="0" allow="encrypted-media" class="block w-full h-120 mx-auto"></iframe>
         <iframe src="https://open.spotify.com/embed/album/3IHaBNiFiySaTuXeBg12i5" title="Spotify Web Player" frameborder="0" allow="encrypted-media" class="block w-full min-h-88 mx-auto"></iframe>        
       </div>

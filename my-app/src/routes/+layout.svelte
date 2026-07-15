@@ -36,7 +36,7 @@
 <svelte:head><link rel="icon" href={favicon} /></svelte:head>
 <svelte:window bind:scrollY={elementScrollTop} />
 <header class="w-full top-0 fixed z-10000 transition-colors duration-500" class:bg-po={elementScrollTop > 50 || !isHome || menuOpen}>
-	<div class="relative flex items-center h-20 justify-center md:justify-between w-full max-w-300 mx-auto px-2">
+	<div class="relative flex items-center h-20 justify-center md:justify-between w-full max-w-7xl mx-auto px-2">
 		<!-- Hamburger button (mobile only) -->
 		<button
 			class="absolute left-2 top-1/2 -translate-y-1/2 flex md:hidden flex-col justify-center gap-1.5 w-10 h-10 p-2"
@@ -48,9 +48,9 @@
 			<span class="block h-0.5 w-full bg-white rounded"></span>
 			<span class="block h-0.5 w-full bg-white rounded"></span>
 		</button>
-		<div class="text-white font-semibold text-3xl md:text-5xl text-nowrap font-display transition-opacity duration-500" class:opacity-0={elementScrollTop < 50 && isHome}>
+		<a href="/" class="text-white font-semibold text-3xl md:text-5xl text-nowrap font-display transition-opacity duration-500" class:opacity-0={elementScrollTop < 50 && isHome} onclick={closeMenu}>
 			Power's Out
-		</div>
+		</a>
 		<!-- Desktop nav links -->
 		<div class="hidden md:flex flex-row">
 			{#each navLinks as { title, linkText }}
@@ -91,7 +91,7 @@
 {@render children()}
 
 <footer class="w-full bg-po">
-	<div class="max-w-300 mx-auto flex flex-col items-center gap-2 p-2">
+	<div class="max-w-7xl mx-auto flex flex-col items-center gap-2 p-2">
 		<div class="flex flex-row justify-center">
 			{#each socials as { link, path }}
 				<NavigationBarIcon {link} {path} size={'28px'}></NavigationBarIcon>

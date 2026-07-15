@@ -69,18 +69,20 @@
 
 <svelte:window onkeydown={onKeydown} />
 
-<div class="pt-20 bg-[#a8d4cf] text-white min-h-screen">
-  <div class="w-[90%] max-w-300 m-auto bg-[#259185] p-4 pt-0 mt-10 rounded-t">
+<div class="pt-20 bg-po-tint text-white min-h-screen">
+  <div class="w-full bg-po-surface">
     <h1 class="text-white text-4xl font-bold w-full text-center py-6">
       GALLERY
     </h1>
+  </div>
+  <div class="max-w-7xl m-auto p-4">
     <div class="columns-1 sm:columns-2 lg:columns-3 gap-4">
       {#each images as image, i}
         <button
           type="button"
           onclick={() => open(i)}
           aria-label="View {image.alt}"
-          class="mb-4 block w-full break-inside-avoid cursor-pointer rounded-xl"
+          class="mb-4 block w-full break-inside-avoid cursor-pointer"
         >
           <img
             src={image.src}
@@ -89,8 +91,7 @@
             height={image.h}
             loading="lazy"
             decoding="async"
-            use:fadeInOnLoad
-            class="w-full h-auto rounded-xl transition-all duration-200 ease-in-out hover:scale-103"
+            class="w-full h-auto transition-all duration-200 ease-in-out hover:scale-103"
           />
         </button>
       {/each}
@@ -112,7 +113,7 @@
     <img
       src={images[selectedIndex].src}
       alt={images[selectedIndex].alt}
-      class="max-w-[92vw] max-h-[72vh] object-contain rounded-xl shadow-2xl"
+      class="max-w-[92vw] max-h-[72vh] object-contain shadow-2xl"
     />
 
     <div class="mt-6 flex items-center gap-8">
@@ -120,7 +121,7 @@
         type="button"
         onclick={prev}
         aria-label="Previous image"
-        class="flex h-14 w-14 items-center justify-center rounded-full bg-[#259185] text-3xl leading-none text-white shadow-lg transition-transform duration-150 hover:scale-110 hover:bg-[#1f7a70]"
+        class="flex h-14 w-14 items-center justify-center rounded-full bg-po-surface text-3xl leading-none text-white shadow-lg transition-transform duration-150 hover:scale-110 hover:bg-po-surface-dark"
       >
         &#8249;
       </button>
@@ -128,7 +129,7 @@
         type="button"
         onclick={next}
         aria-label="Next image"
-        class="flex h-14 w-14 items-center justify-center rounded-full bg-[#259185] text-3xl leading-none text-white shadow-lg transition-transform duration-150 hover:scale-110 hover:bg-[#1f7a70]"
+        class="flex h-14 w-14 items-center justify-center rounded-full bg-po-surface text-3xl leading-none text-white shadow-lg transition-transform duration-150 hover:scale-110 hover:bg-po-surface-dark"
       >
         &#8250;
       </button>
