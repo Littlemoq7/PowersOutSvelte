@@ -1,6 +1,4 @@
 <script>
-  import { fadeInOnLoad } from "$lib/actions/fadeInOnLoad.js";
-
   // Photos live in static/images/home_images/ as resized WebP (~1600px, q80).
   // Full-resolution originals are kept in my-app/photo-originals/.
   // Absolute paths so they resolve correctly regardless of the current route.
@@ -70,7 +68,7 @@
 <svelte:window onkeydown={onKeydown} />
 
 <div class="pt-20 bg-po-tint text-white min-h-screen">
-  <div class="w-full bg-po-surface border-y border-white">
+  <div class="w-full bg-po-surface border-y border-po-line">
     <h1 class="text-white text-4xl font-bold w-full text-center py-6">
       GALLERY
     </h1>
@@ -91,7 +89,7 @@
             height={image.h}
             loading="lazy"
             decoding="async"
-            class="w-full h-auto transition-all duration-200 ease-in-out hover:scale-103"
+            class="w-full h-auto transition-all duration-200 ease-in-out hover:scale-103 border border-po-line/50"
           />
         </button>
       {/each}

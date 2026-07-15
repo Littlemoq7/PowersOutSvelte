@@ -1,7 +1,7 @@
 <script>
   let { text, picture, year, link } = $props();
 </script>
-<div class="bg-po-surface border border-white duration-300 ease-in-out hover:scale-102">
+<div class="bg-po-surface border border-po-line duration-300 ease-in-out hover:scale-102">
   <a
     href={link}
     target="_blank"

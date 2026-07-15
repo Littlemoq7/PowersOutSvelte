@@ -4,7 +4,7 @@
 </script>
 
 <div class="pt-20 bg-po-tint text-white">
-  <div class="w-full bg-po-surface border-y border-white text-white text-4xl font-bold font-sans text-center">
+  <div class="w-full bg-po-surface border-y border-po-line text-white text-4xl font-bold font-sans text-center">
     <h1 class="py-6">RELEASES</h1>
   </div>
   <div class="max-w-7xl m-auto">

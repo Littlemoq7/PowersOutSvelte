@@ -36,7 +36,7 @@
 
 <svelte:head><link rel="icon" href={favicon} /></svelte:head>
 <svelte:window bind:scrollY={elementScrollTop} />
-<header class="w-full top-0 fixed z-10000 border-b transition-colors duration-500 {scrolled ? 'bg-po border-white' : 'border-white/0'}">
+<header class="w-full top-0 fixed z-10000 border-b transition-colors duration-500 {scrolled ? 'bg-po border-po-line' : 'border-white/0'}">
 	<div class="relative flex items-center h-20 justify-center md:justify-between w-full max-w-7xl mx-auto px-2">
 		<!-- Hamburger button (mobile only) -->
 		<button
@@ -91,7 +91,7 @@
 
 {@render children()}
 
-<footer class="w-full bg-po border-t border-white">
+<footer class="w-full bg-po border-t border-po-line">
 	<div class="max-w-7xl mx-auto flex flex-col items-center gap-2 p-2">
 		<div class="flex flex-row justify-center">
 			{#each socials as { link, path }}

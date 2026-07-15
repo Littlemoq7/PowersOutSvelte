@@ -10,4 +10,5 @@
 	--color-po-deep: #134d46; /* deep hover / darkest teal */
 	--color-po-tint: #a8d4cf; /* light page background tint */
 	--color-po-border: #ccc; /* neutral form input border */
+	--color-po-line: #cef0ec; /* subtle whiteish outline for cards/sections (border-po-line) */
 }

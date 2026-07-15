@@ -1,12 +1,12 @@
 <div class="pt-20 bg-po-tint text-white min-h-screen">
-  <div class="w-full bg-po-surface border-y border-white py-6">
+  <div class="w-full bg-po-surface border-y border-po-line py-6">
     <div class="text-4xl font-bold font-sans text-center w-full">
       <h1>CONTACT</h1>
     </div>
     <p class="text-center pt-2.5 px-10">Fill in your contact and message below.</p>
   </div>
   <section class="max-w-2xl mx-auto px-5 py-10">
-    <form action="https://api.web3forms.com/submit" method="POST" class="w-full bg-po-surface border border-white p-6 sm:p-10 shadow-[0_8px_20px_rgba(0,0,0,0.15)] flex flex-col">
+    <form action="https://api.web3forms.com/submit" method="POST" class="w-full bg-po-surface border border-po-line p-6 sm:p-10 shadow-[0_8px_20px_rgba(0,0,0,0.15)] flex flex-col">
       <!-- Replace with your Access Key -->
       <input type="hidden" name="access_key" value="f7e26cd2-aaeb-424d-ab4b-6ff2ebc3286e">
 
