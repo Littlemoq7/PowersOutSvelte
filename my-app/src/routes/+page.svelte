@@ -60,12 +60,12 @@
     </div>
 
     <h2 class="font-display font-bold text-2xl md:text-4xl tracking-tight uppercase mb-4">
-      Originals, covers &amp; jams
+      Originals, covers, &amp; jams
     </h2>
     <div class="mx-auto mb-6 h-1 w-16 rounded-full bg-po-accent"></div>
 
     <p class="text-base md:text-lg leading-relaxed text-white/90 max-w-xl mx-auto mb-7">
-      Playing originals and covers, rock, pop, blues, country, funk, jam band, and more. 
+      Playing originals and covers, rock, pop, blues, funk, jam band, and more. 
       Click the YouTube icon to watch some of our performances, and see the contact page for booking &amp; inquiries.
     </p>
 
