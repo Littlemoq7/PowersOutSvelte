@@ -151,7 +151,7 @@
                 height={item.img.h}
                 loading="lazy"
                 decoding="async"
-                class="w-full h-full object-cover transition-all duration-200 ease-in-out hover:scale-103 border border-po-line/50"
+                class="w-full h-full object-cover transition-all duration-200 ease-in-out hover:scale-102 border border-po-line/50 hover:border-po-accent"
               />
             </button>
           {/each}
